@@ -1,6 +1,9 @@
+'use client';
 import React from 'react'
 import artigos from '../../mock_data/mockData'; 
 import { Artigo } from '../../mock_data/mockData';
+import Comments from '@/app/components/Comments';
+
 
 interface ParamsInterface {
     postId: string; 
@@ -14,6 +17,7 @@ const page = ({ postId }: ParamsInterface) => {
   return (
     <div>
         <p>{textoArtigo}</p>
+        <Comments/>
     </div>
   )
 }
